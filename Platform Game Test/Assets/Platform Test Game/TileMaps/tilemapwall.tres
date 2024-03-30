@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bawjw3e2dkemb"]
+
+[ext_resource type="Texture2D" uid="uid://da4f8ouhycuyn" path="res://Assets/Platform Test Game/Textures/Blocks/Cubo_Muro.svg" id="1_rocin"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wf0kd"]
+resource_name = "wall"
+texture = ExtResource("1_rocin")
+texture_region_size = Vector2i(512, 512)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+
+[resource]
+tile_size = Vector2i(512, 512)
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Wall"
+terrain_set_0/terrain_0/color = Color(0, 0.556863, 0.666667, 1)
+sources/3 = SubResource("TileSetAtlasSource_wf0kd")
