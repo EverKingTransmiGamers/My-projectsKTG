@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba6p5qnuyamh7"]
+
+[ext_resource type="Texture2D" uid="uid://jdknt6uiwkj7" path="res://Assets/PGT-RW/Textures/Terrain/Pincho1K.png" id="1_0palw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iipdi"]
+size = Vector2(100, 190)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gb767"]
+size = Vector2(200, 100)
+
+[node name="Pincho1K" type="Area2D" groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 0
+
+[node name="Pincho1Ksp" type="Sprite2D" parent="."]
+scale = Vector2(1.39, 1.39)
+texture = ExtResource("1_0palw")
+
+[node name="Collision1K" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_iipdi")
+
+[node name="Collision2K" type="CollisionShape2D" parent="."]
+position = Vector2(0, 130)
+shape = SubResource("RectangleShape2D_gb767")

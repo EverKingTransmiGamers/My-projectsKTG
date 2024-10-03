@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckrx3tfrm25kq"]
+
+[ext_resource type="FontFile" uid="uid://ciwu3s42wycke" path="res://Assets/PGT-RW/Montserrat-Bold.ttf" id="1_m8t1p"]
+[ext_resource type="Script" path="res://Assets/PGT-RW/Scripts/menu_inicio.gd" id="1_qrllm"]
+
+[sub_resource type="Theme" id="Theme_723sf"]
+default_font = ExtResource("1_m8t1p")
+default_font_size = 46
+
+[sub_resource type="Theme" id="Theme_w67ys"]
+default_font = ExtResource("1_m8t1p")
+default_font_size = 26
+
+[sub_resource type="Theme" id="Theme_ofi0k"]
+default_font = ExtResource("1_m8t1p")
+default_font_size = 26
+
+[node name="Menu_inicio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qrllm")
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 319.0
+offset_top = 56.0
+offset_right = 646.0
+offset_bottom = 180.0
+theme = SubResource("Theme_723sf")
+text = "StickSpyMan
+Adventures"
+
+[node name="start_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 260.0
+offset_right = 548.0
+offset_bottom = 335.0
+theme = SubResource("Theme_w67ys")
+text = "Iniciar"
+
+[node name="exit_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 356.0
+offset_right = 548.0
+offset_bottom = 431.0
+theme = SubResource("Theme_ofi0k")
+text = "Cerrar"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcad738foydgk"]
+
+[ext_resource type="Script" path="res://Assets/PGT-RW/Scripts/death_screen.gd" id="1_3w4gx"]
+[ext_resource type="FontFile" uid="uid://ciwu3s42wycke" path="res://Assets/PGT-RW/Montserrat-Bold.ttf" id="1_abpgt"]
+
+[sub_resource type="Theme" id="Theme_n3q0i"]
+default_font = ExtResource("1_abpgt")
+default_font_size = 48
+
+[sub_resource type="Theme" id="Theme_1d1th"]
+default_font = ExtResource("1_abpgt")
+default_font_size = 24
+
+[node name="Death_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3w4gx")
+
+[node name="Has_Muerto Text" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 59.0
+offset_right = 630.0
+offset_bottom = 141.0
+theme = SubResource("Theme_n3q0i")
+text = "Has Muerto"
+
+[node name="retry_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 200.0
+offset_right = 551.0
+offset_bottom = 261.0
+theme = SubResource("Theme_1d1th")
+text = "Reintentar"
+
+[node name="back_button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 278.0
+offset_right = 567.0
+offset_bottom = 341.0
+theme = SubResource("Theme_1d1th")
+text = "Volver al inicio"
+
+[connection signal="pressed" from="retry_button" to="." method="_on_retry_button_pressed"]
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]

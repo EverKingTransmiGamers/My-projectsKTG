@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://t000wf51eoaw"]
+
+[ext_resource type="Script" path="res://Assets/PGT-RW/Scripts/player.gd" id="1_f0aov"]
+[ext_resource type="Texture2D" uid="uid://dqnnl2cwv6rp1" path="res://Assets/PGT-RW/Textures/Player/SS_Base.png" id="2_s1u7y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dwoeg"]
+size = Vector2(34, 112)
+
+[node name="player" type="CharacterBody2D" groups=["Player"]]
+z_index = 1
+collision_mask = 14
+script = ExtResource("1_f0aov")
+
+[node name="death_col" type="Area2D" parent="." groups=["Player"]]
+collision_mask = 4
+
+[node name="Collision2D1K" type="CollisionShape2D" parent="death_col"]
+position = Vector2(3, 5)
+shape = SubResource("RectangleShape2D_dwoeg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_s1u7y")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(4, -36)
+target_position = Vector2(50, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.1, 1.1)
+
+[node name="dashing_timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 5)
+shape = SubResource("RectangleShape2D_dwoeg")
+
+[connection signal="area_entered" from="death_col" to="." method="_on_death_col_area_entered"]
+[connection signal="timeout" from="dashing_timer" to="." method="_on_dashing_timer_timeout"]
