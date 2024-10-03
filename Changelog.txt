@@ -1,0 +1,18 @@
+Version: alp-1.1: 
+
+Note: I'm a rookie in english language, sorry for a bad ortography, I'm learning it in Duolingo XD.
+
+Español:
+
+-  Agregado Nuevo personaje sin animar (Me falta ponerle las animaciones).
+-  Agregada Nueva Mecanica, el dashing (presiona la tecla "d" para realizarla, se puede hacer tanto en el suelo como en el aire).
+-  Agregado Nuevo Menú de inicio, y de muerte.
+-  Hay un bug con el dashing, se puede spamear y mantener volando, pronto lo arreglo.
+
+
+English:
+
+-  Added new Character without animations (I need to add animations it).
+-  Added new mechanic, acceleration (press the "d" key to use it, you can do it on the floor and the air).
+-  Added new Principal menu, and Death menu.
+-  There is a bug with acceleration, you can spam the key and the character keep on the air, I need fix this bug soon.
