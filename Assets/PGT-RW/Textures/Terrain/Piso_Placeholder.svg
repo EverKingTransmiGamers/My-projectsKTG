@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46667 135.46667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="Piso_Placeholder.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0074671"
+     inkscape:cx="77.918181"
+     inkscape:cy="251.12484"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#060606;stroke:#fefefe;stroke-width:6.35001;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       id="rect974"
+       width="129.11665"
+       height="129.11664"
+       x="3.175005"
+       y="3.175005"
+       rx="0"
+       ry="0"
+       inkscape:label="Piso_Placeholder" />
+    <path
+       style="fill:#060606;stroke:#fefefe;stroke-width:6.35;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       d="M 0,70.908333 H 135.46667"
+       id="path2714"
+       sodipodi:nodetypes="cc"
+       inkscape:label="linea2k" />
+    <path
+       style="fill:#060606;stroke:#fefefe;stroke-width:6.35;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       d="M 0,37.041667 H 135.46667"
+       id="path2765"
+       sodipodi:nodetypes="cc"
+       inkscape:label="linea1k" />
+    <path
+       style="fill:#060606;stroke:#fefefe;stroke-width:6.35;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+       d="M 0,104.775 H 135.46667"
+       id="path2767"
+       sodipodi:nodetypes="cc"
+       inkscape:label="linea3k" />
+  </g>
+</svg>
